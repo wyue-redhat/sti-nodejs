@@ -32,7 +32,7 @@ var server = http.createServer(function (req, res) {
 		res.write(util.inspect(formattedBody, null) + '\n');
 		res.write('\n');
 		res.write('Host: ' + os.hostname() + '\n');
-		res.write('OS Type: ' + os.type() + '\n');
+		res.write('----------------OS Type: ' + os.type() + '\n');
 		res.write('OS Platform: ' + os.platform() + '\n');
 		res.write('OS Arch: ' + os.arch() + '\n');
 		res.write('OS Release: ' + os.release() + '\n');
